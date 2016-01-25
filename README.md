@@ -6,8 +6,11 @@ BMStream *loginStream;
 BMStream *passwordStream;
 
 passwordStream
+    .filter(^(NSString *password) {
+        return password.length > 6
+    })
     .map(^(NSString *password) {
-        return password.md5;
+        return md5(password);
     });
 
 loginStream
