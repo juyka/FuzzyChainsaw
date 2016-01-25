@@ -1,4 +1,4 @@
-# Chainsaw
+# FuzzyChainsaw
 Objective-C streams implementation.
 
 ```Objective-C
